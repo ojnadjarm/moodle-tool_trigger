@@ -1,5 +1,4 @@
-[![ci](https://github.com/catalyst/moodle-tool_trigger/actions/workflows/ci.yml/badge.svg?branch=MOODLE_311_STABLE)](https://github.com/catalyst/moodle-tool_trigger/actions/workflows/ci.yml?branch=MOODLE_311_STABLE)
-
+[![ci](https://github.com/catalyst/moodle-tool_trigger/actions/workflows/ci.yml/badge.svg?branch=MOODLE_404_STABLE)](https://github.com/catalyst/moodle-tool_trigger/actions/workflows/ci.yml?branch=MOODLE_404_STABLE)
 
 # Event Trigger
 
