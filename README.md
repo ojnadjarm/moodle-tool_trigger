@@ -51,6 +51,35 @@ To install the plugin in Moodle via the Moodle User Interface:
 Plugin setup and configuration documentation can be found at the following link:
 
 * https://github.com/catalyst/moodle-tool_trigger/wiki
+## Sub-plugins
+
+The plugin is designed to be extensible and supports custom sub-plugins for additional functionality.
+
+### Creating a Sub-plugin
+
+To create your own sub-plugin:
+
+1. Add your code to the `custom` directory with the following structure:
+    ```
+    custom/yourplugin/
+    ├── steps/
+    │   └── steptype/
+    │       └── yourstep.php
+    ├── settings.php (optional)
+    └── version.php
+    ```
+
+2. Your steps can be one of the following types:
+    * `action` - Performs operations like sending data or triggering external systems
+    * `filter` - Controls workflow execution based on conditions
+    * `lookup` - Retrieves additional data needed by the workflow
+
+3. Implement the appropriate interface based on your step type:
+    * Actions: `\yourplugin\classes\steps\action\action_step.php`
+    * Filters: `\yourplugin\classes\steps\filter\filter_step.php`
+    * Lookups: `\yourplugin\classes\steps\lookup\lookup_step.php`
+
+4. Add a settings page by creating a `settings.php` file in your sub-plugin's root directory.
 
 ## Roadmap
 
